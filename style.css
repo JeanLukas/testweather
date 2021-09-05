@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;300;200&family=Roboto&display=swap');
+
+body, button, input, select, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root{
+    --dark-blue: #1d1d1d;
+    --light-grey: #bfbfc1;
+}
+h2, h4{
+    margin: 5px;
+}
+h1{
+    font-size: 60px;
+    margin: 0;
+    font-weight: 200;
+}
+h4{
+    font-weight: 300;
+}
+.iphone-container{
+    width: 300px;
+    height: 600px;
+    border-radius: 45px;
+    border: 20px solid #111;
+    background: var(--dark-blue);
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 60px 10px 20px;
+}
+
+.iphone-container .notch{
+    width: 180px;
+    height: 25px;
+    border-radius: 0 0 30px 30px;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 90px);;
+}
+
+.iphone-container .menu{
+    width: 90px;
+    background: var(--light-grey);
+    height: 2px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 45px);
+}
+.iphone-container svg{
+    width: 100px;
+    height: 100px;
+    margin: 40px 0 20px;
+}
+.iphone-container .weak-weather{
+    color: var(--light-grey);;
+    display: grid;
+    text-align: left;
+    margin-top: 40px; 
+    padding: 0 10px;
+    grid-template-columns: 3fr 1fr ;
+    grid-gap: 0.5rem;
+}
